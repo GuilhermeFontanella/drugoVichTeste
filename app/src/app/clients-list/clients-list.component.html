@@ -1,0 +1,11 @@
+<div>
+  <app-header-menu></app-header-menu>
+</div>
+<div>
+  <app-dynamic-table
+  header="Listagem de Clientes"
+  (newClientEvent)="actionEvents($event)"
+  (selectedItem)="actionEvents($event)"
+  ></app-dynamic-table>
+</div>
+

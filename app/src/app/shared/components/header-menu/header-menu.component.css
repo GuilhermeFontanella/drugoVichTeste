@@ -1,0 +1,14 @@
+.menu {
+  background-color: #616161;
+}
+
+.image {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  text-align: center;
+}
+
+.image img {
+  margin: auto;
+}
