@@ -18,11 +18,12 @@ export class ClientsListComponent implements OnInit {
   }
 
   actionEvents(event: any) {
-    if (event = [{type: 'new'}]) {
-      console.log('pessou aqui')
-      this.router.navigateByUrl('')
+    console.log(event);
+
+    if (event === 'new') {
+      this.router.navigateByUrl('client/new')
     } else {
-      this.router.navigateByUrl(`editar-cliente/idCliente`)
+      this.router.navigateByUrl('client/edit/idClient')
     }
   }
 

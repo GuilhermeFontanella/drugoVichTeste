@@ -55,11 +55,11 @@ export class DynamicTableComponent implements OnInit {
   }
 
   select(objeto: any): void {
-    this.selectedItem.emit([objeto, 'ediit']);
+    return this.selectedItem.emit(objeto);
   }
 
   newClient(event: MouseEvent): void {
-    this.newClientEvent.emit([{ type: 'new'}]);
+    return this.newClientEvent.emit('new');
   }
 
 }

@@ -10,3 +10,9 @@ body {
 .p-datatable .p-datatable-thead > tr > th {
   text-align: center !important;
 }
+
+.p-dropdown {
+  width: 100% !important;
+}
+
+

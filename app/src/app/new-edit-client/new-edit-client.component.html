@@ -1,0 +1,40 @@
+<div class="container" *ngIf="showHtml">
+  <div class="card" style="margin-top: 3rem;">
+    <p-card>
+      <div class="header">
+        <div class="headerArea ">
+          <span class="pi pi-user"></span>
+          <h3 *ngIf="newClient">Novo Cliente</h3>
+          <h3 *ngIf="!newClient">Editar Cliente</h3>
+        </div>
+      </div>
+      <div class="formsArea">
+        <form [formGroup]="form" (ngSubmit)="submit()">
+          <div class="grid">
+            <div class="col">
+              <span>Nome</span>
+              <input pInputText formControlName="name" [disabled]="!newClient">
+            </div>
+            <div class="col-12 cnpj">
+              <span>CNPJ</span>
+              <p-inputMask formControlName="cnpj" mask="99.999.999/9999-99" id="inputMask" [disabled]="!newClient"></p-inputMask>
+            </div>
+            <div class="col-12">
+              <span>Status</span>
+              <p-dropdown
+              [options]="status"
+              (onChange)='form.get("status")?.setValue($event.value.label)'
+              optionLabel="label" [required]="true"
+              formControlName="status"></p-dropdown>
+            </div>
+            <div class="col-12 buttonArea">
+              <button pButton class="p-button-warning" (click)="goBack()">Voltar</button>
+              <button pButton class="p-button-success" type="submit" disabled="form.valid">Salvar</button>
+            </div>
+          </div>
+
+        </form>
+      </div>
+    </p-card>
+  </div>
+</div>

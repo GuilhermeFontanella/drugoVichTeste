@@ -1,3 +1,4 @@
+import { HeaderMenuModule } from './shared/components/header-menu/header-menu.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -21,7 +22,7 @@ import { CommonModule } from '@angular/common';
     BrowserAnimationsModule,
     HttpClientModule,
     RouterModule,
-
+    HeaderMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
