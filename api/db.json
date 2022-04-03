@@ -1,0 +1,52 @@
+{
+  "clients": [
+    {
+      "name": "Auto-Peças Joaquim LTDA.",
+      "cnpj": "000000000000000",
+      "status": "Inativo",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "name": "Auto-Peças Carlinhos LTDA.",
+      "cnpj": "000000000000000",
+      "status": "Ativo"
+    },
+    {
+      "id": 3,
+      "name": "Auto-Peças João LTDA.",
+      "cnpj": "000000000000000",
+      "status": "Ativo"
+    },
+    {
+      "id": 4,
+      "name": "Auto-Peças Maria LTDA.",
+      "cnpj": "000000000000000",
+      "status": "Ativo"
+    },
+    {
+      "name": null,
+      "cnpj": null,
+      "status": null,
+      "id": 5
+    },
+    {
+      "name": "Teste",
+      "cnpj": "99.999.999/9999-99",
+      "status": null,
+      "id": 6
+    },
+    {
+      "name": "teste 1",
+      "cnpj": "88.888.888/8888-88",
+      "status": null,
+      "id": 7
+    },
+    {
+      "name": "jj",
+      "cnpj": "99.999.999/9999-99",
+      "status": null,
+      "id": 8
+    }
+  ]
+}
