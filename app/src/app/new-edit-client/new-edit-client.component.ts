@@ -41,8 +41,9 @@ export class NewEditClientComponent implements OnInit {
       status: [client?.status, [Validators.required]]
     })
     this.form.valueChanges.subscribe((resp) => {
-      if (this.form !== resp) {
-        this.buttonDisabled = false;
+      if (this.form.valid) {
+        this.buttonDisabled = false
+
       }
     })
     this.showHtml = true;

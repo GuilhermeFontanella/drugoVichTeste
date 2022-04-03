@@ -19,6 +19,8 @@
           <tr>
               <td *ngFor="let col of cols">
                 {{rowData[col.field]}}
+                <div class="statusSignInactive" *ngIf="rowData[col.field] === 'Inativo'"></div>
+                <div class="statusSignActive" *ngIf="rowData[col.field] === 'Ativo'"></div>
                 <button
                 pButton
                 *ngIf="col.field === 'Ação'"

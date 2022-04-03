@@ -25,34 +25,16 @@
       "status": "Ativo"
     },
     {
-      "name": null,
-      "cnpj": null,
-      "status": null,
+      "name": "kkkkkkkkkkkkkk",
+      "cnpj": "00.000.000/0000-00",
+      "status": "Ativo",
       "id": 5
     },
     {
-      "name": "Teste",
-      "cnpj": "99.999.999/9999-99",
-      "status": null,
+      "name": "llllllllllllllllllll",
+      "cnpj": "00.000.000/0000-00",
+      "status": "Inativo",
       "id": 6
-    },
-    {
-      "name": "teste 1",
-      "cnpj": "88.888.888/8888-88",
-      "status": null,
-      "id": 7
-    },
-    {
-      "name": "jj",
-      "cnpj": "99.999.999/9999-99",
-      "status": null,
-      "id": 8
-    },
-    {
-      "name": "abcde",
-      "cnpj": "99.999.999/9999-99",
-      "status": null,
-      "id": 9
     }
   ]
 }

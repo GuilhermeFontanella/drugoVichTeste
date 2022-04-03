@@ -13,17 +13,17 @@
           <div class="grid">
             <div class="col">
               <span>Nome</span>
-              <input pInputText formControlName="name" [disabled]="!newClient">
+              <input pInputText formControlName="name" required="true">
             </div>
             <div class="col-12 cnpj">
               <span>CNPJ</span>
-              <p-inputMask formControlName="cnpj" mask="99.999.999/9999-99" id="inputMask" [disabled]="!newClient"></p-inputMask>
+              <p-inputMask formControlName="cnpj" mask="99.999.999/9999-99" id="inputMask" [disabled]="!newClient" [required]="true"></p-inputMask>
             </div>
             <div class="col-12">
               <span>Status</span>
               <p-dropdown
               [options]="status"
-              (onChange)='form.get("status")?.setValue($event.value.label)'
+              (onChange)="this.form.get('status')?.setValue($event.value.label)"
               optionLabel="label" [required]="true"
               ></p-dropdown>
             </div>

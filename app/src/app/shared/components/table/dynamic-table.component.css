@@ -26,3 +26,22 @@ p-table button {
   background-color: #E18F53;
 }
 
+.statusSignInactive {
+  border: 1px solid rgb(63, 63, 63);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: red;
+  margin: auto;
+}
+
+.statusSignActive {
+  border: 1px solid rgb(63, 63, 63);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: greenyellow;
+  text-align: center;
+  margin: auto;
+}
+
