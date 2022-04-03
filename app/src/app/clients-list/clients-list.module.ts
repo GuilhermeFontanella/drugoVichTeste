@@ -14,7 +14,7 @@ import { DynamicTableModule } from '../shared/components/table/dynamic-table.mod
     CommonModule,
     ClientsListRoutingModule,
     HeaderMenuModule,
-    DynamicTableModule
+    DynamicTableModule,
   ]
 })
 export class ClientsListModule { }

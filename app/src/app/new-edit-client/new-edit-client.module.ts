@@ -8,7 +8,7 @@ import { DropdownModule } from 'primeng/dropdown';
 import { NewEditClientRoutingModule } from './clients-list-routing.module';
 import { InputTextModule } from 'primeng/inputtext';
 import { InputMaskModule } from 'primeng/inputmask';
-
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -24,7 +24,8 @@ import { InputMaskModule } from 'primeng/inputmask';
     DropdownModule,
     NewEditClientRoutingModule,
     InputTextModule,
-    InputMaskModule
+    InputMaskModule,
+    MatSnackBarModule
   ]
 })
 export class NewEditClientModule { }

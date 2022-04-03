@@ -7,7 +7,7 @@
     <button pButton pTooltip="Enter your username" tooltipPosition="bottom" (click)="newClient($event)">
       <span class="pi pi-plus" style="margin-right: 10px;"></span>NOVO</button>
   </div>
-  <p-table [value]="cars" [columns]="cols">
+  <p-table [value]="items" [columns]="cols">
       <ng-template pTemplate="header">
           <tr>
               <th *ngFor="let col of cols">
@@ -15,14 +15,14 @@
               </th>
           </tr>
       </ng-template>
-      <ng-template pTemplate="body" let-car let-columns>
+      <ng-template pTemplate="body" let-rowData let-columns>
           <tr>
               <td *ngFor="let col of cols">
-                {{car[col.field]}}
+                {{rowData[col.field]}}
                 <button
                 pButton
                 *ngIf="col.field === 'Ação'"
-                (click)="select(car)"
+                (click)="select(rowData)"
                 [style]="col.width">
                   {{col.buttonLabel}}
                 </button>

@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  // apiUrl: 'https://demo4231135.mockable.io/' NÃO CONSEGUI CONECTAR A API
+  apiUrl:  'http://localhost:3000/clients'
 };
 
 /*

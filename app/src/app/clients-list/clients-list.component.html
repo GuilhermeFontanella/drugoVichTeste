@@ -1,6 +1,8 @@
 <div>
   <app-dynamic-table
   header="Listagem de Clientes"
+  [cols]="cols"
+  [items]="items"
   (newClientEvent)="actionEvents($event)"
   (selectedItem)="actionEvents($event)"
   ></app-dynamic-table>

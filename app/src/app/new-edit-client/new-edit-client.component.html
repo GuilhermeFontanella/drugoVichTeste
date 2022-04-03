@@ -25,14 +25,13 @@
               [options]="status"
               (onChange)='form.get("status")?.setValue($event.value.label)'
               optionLabel="label" [required]="true"
-              formControlName="status"></p-dropdown>
+              ></p-dropdown>
             </div>
             <div class="col-12 buttonArea">
               <button pButton class="p-button-warning" (click)="goBack()">Voltar</button>
-              <button pButton class="p-button-success" type="submit" disabled="form.valid">Salvar</button>
+              <button pButton class="p-button-success" type="submit" [disabled]="buttonDisabled">Salvar</button>
             </div>
           </div>
-
         </form>
       </div>
     </p-card>
